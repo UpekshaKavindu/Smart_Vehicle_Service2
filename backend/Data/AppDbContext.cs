@@ -19,8 +19,19 @@ namespace Backend.Data
 
             // Seed data
             modelBuilder.Entity<Customer>().HasData(
-                new Customer { Id = 1, FirstName = "John", LastName = "Doe", Email = "john.doe@example.com", Phone = "+1-555-0101", Address = "123 Main St, Anytown, AN 12345", CreatedAt = DateTime.UtcNow.AddMonths(-6) },
-                new Customer { Id = 2, FirstName = "Jane", LastName = "Smith", Email = "jane.smith@example.com", Phone = "+1-555-0102", Address = "456 Oak Ave, Othertown, OT 67890", CreatedAt = DateTime.UtcNow.AddMonths(-3) }
+                new Customer { Id = 1,
+                 FirstName = "John", 
+                 LastName = "Doe", 
+                 Email = "john.doe@example.com", 
+                 Phone = "+1-555-0101", 
+                 Address = "123 Main St, Anytown, AN 12345", CreatedAt = DateTime.UtcNow.AddMonths(-6) },
+
+                new Customer { Id = 2, 
+                FirstName = "Jane", 
+                LastName = "Smith", 
+                Email = "jane.smith@example.com", 
+                Phone = "+1-555-0102", 
+                Address = "456 Oak Ave, Othertown, OT 67890", CreatedAt = DateTime.UtcNow.AddMonths(-3) }
             );
         }
     }
